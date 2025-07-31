@@ -2,10 +2,10 @@ package com.ddu.ch13.part01.exam;
 
 public class MemberDto {
 	
-	String memberId;
-	String memberPw;
-	String memberName;
-	String memberEmail;
+	private String memberId;
+	private String memberPw;
+	private String memberName;
+	private String memberEmail;
 	public MemberDto(String memberId, String memberPw, String memberName, String memberEmail) {
 		super();
 		this.memberId = memberId;
