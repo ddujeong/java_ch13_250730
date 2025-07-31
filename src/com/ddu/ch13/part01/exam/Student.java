@@ -12,21 +12,21 @@ public class Student {
 
 	@Override
 	public int hashCode() {
-		// TODO Auto-generated method stub
 		
-		return super.hashCode();
+		return name.hashCode() ;
 	}
 
-//	@Override
-//	public boolean equals(Object obj) {
-//		// TODO Auto-generated method stub
-//		if (obj instanceof Student) {
-//			Student student = (Student) obj;
-//			//return student.studentNum.equals(studentNum);
-//
-//		}
-//		}
-//	
-//
-//	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Student) {
+			Student student = (Student) obj;
+			return student.studentNum == (studentNum);
+
+		} else {
+				return false;
+		}
+		}
+	
+
+	
 }
